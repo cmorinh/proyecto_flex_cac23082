@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&display=swap');
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+/* -------------------- HEADER -------------------------- */
+
+header {           
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/ba1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.headerMenu {
+    background-color: #353a40;
+    display: flex;
+}
+
+.headerImagen, .headerNav {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerImagen {
+    width: 30%;
+}
+
+.headerNav {
+    width: 70%;
+}
+
+.headerImagen img, .headerImagen h2 {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.headerImagen h2 {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.headerNavItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerNavItem {
+    margin: 5px;
+    list-style: none;
+}
+
+.headerNavItem a {
+    color: #b7b9b1;
+    font-size: 1.4em;
+}
+
+.headerNavItem:first-child > a {
+    color: #ffffff;
+}
+
+.headerNavItem:last-child > a {
+    color: #2b9b43;
+}
+
+.headerNavItem a:focus {
+    color: #ffffff;
+}
+
+.headerContent {   
+    display: flex;
+    width: 90vw;
+    height: 85vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerContentDescription {
+    width: 45%;
+    height: 45%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.headerContentDescription h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.headerContentDescription p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.headerContentButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.headerContentButton a {
+    font-size: 1.5em;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btnSpeaker {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.btnBuyTickets {
+    background-color: #29a744;
+    border: 1px solid #29a744;
+}
+
+/* -------------------- ORADORES -------------------------- */
+
+.speakersSection{
+    width: 100%;
+    height: auto;    
+}
+
+.speakersSection h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 1.8rem;
+}
+
+.speakersSection h2 span {
+    font-size: 0.4em;
+    font-weight: 300;
+}
+
+.speakersContent {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.speakersCard {
+    width: 30%;
+    display: block;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    margin: 1rem 0 2.5rem;
+}
+
+.speakersCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.speakersCard div h6 {
+    display: inline-block;    
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.speakersCardJava {
+    color: #000000;
+    background-color: #fec106;
+}
+
+.speakersCardReact {
+    color: #ffffff;
+    background-color: #17a2b9;
+}
+
+.speakersCardBusiness {
+    color: #ffffff;
+    background-color: #6c757c;
+}
+
+.speakersCardStartUp {
+    color: #ffffff;
+    background-color: #dc3546;
+}
+
+.speakeDescription {
+    padding: 5%;
+}
+
+.speakeDescription p {
+    padding-top: 1rem;
+    line-height: 1.5em;
+}
+
+/* -------------------- LUGARES -------------------------- */
+
+.placeSection {
+    background-color: #353a40;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.placeImg, .placeDescription {
+    width: 50%;
+    height: 100%;
+    display: block;
+    border: 1px solid white;
+}
+
+.placeImg {
+    background-image: url('../assets/img/honolulu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placeDescription h2, .placeDescription p, .placeDescription button {
+    margin: 1rem;
+    color: white;
+}
+
+.placeDescription h2 {
+    font-size: 2em;
+}
+
+.placeDescription p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+ }
+
+ .placeDescription button {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.1em;
+ }
+
+/* -------------------- CONOCENOS -------------------------- */
+
+.formSection {
+    width: 100%;
+}
+
+.formSection h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 2rem;
+    margin: 10px 0px;
+}
+
+.formSection h2 span {
+    font-size: 0.4em;
+    font-weight: 300;
+}
+
+.formSection h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.formSection form {
+    text-align: center;
+}
+
+.formSection div {
+    width: 42%;
+    margin: 0 auto;
+}
+
+input[type=text], textarea {
+    color: #6c787e;
+    border: 1px solid #dee3e7;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    width: 20%;
+    line-height: 1rem;
+    margin: 5px 15px;
+    font-size: 1em;
+    padding: 10px;
+}
+
+textarea {
+    width: 42%;
+    display: block;
+    margin: 15px auto;
+    font-size: 1.8em;
+    padding: 15px;
+    height: 120px;
+}
+
+.formSection div p {
+    text-align: left;
+    color: #6c787e;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #96c93e;
+    font-size: 1.5em;
+    border: 1px solid #96c93e;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 0px;
+    color: white;
+}
+
+/* -------------------- FOOTER -------------------------- */
+
+footer {
+    background-image: linear-gradient(to right, rgba(29,55,68, 1), rgba(29,82,113,1));
+}
+
+.footerNavItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.footerNavItem {
+    padding: 20px 40px;
+    text-align: center;
+    width: 170px;
+}
+
+.footerNavItem a {
+    display: block;
+    font-size: 1.2em;    
+}
+
+@media screen and (max-width : 1440px) {
+    .headerImagen, .headerNav {
+        margin-right: 5rem;
+    }
+
+    .headerContentDescription {
+        margin-top: 0rem;
+    }
+
+    .speakersContent {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    header {
+        height: 65vh;
+    }
+
+    .headerImagen, .headerNav {
+        margin-right: 0rem;
+    }
+
+    .headerNav {
+        justify-content: flex-start;
+    }
+
+    .headerImagen img, .headerImagen h2 {
+        width: 130px;
+    }
+
+    .headerImagen h2 {
+        font-size: 1.3em;
+    }
+
+    .headerNavItem a {
+        font-size: 1.1em;
+    }
+
+    .headerContent {
+        height: 65vh;
+    }    
+
+    .headerContentDescription {
+        width: 60%;
+        height: 50%;
+        margin-top: 0rem;
+    }
+
+    .headerContentDescription h1 {        
+        font-size: 2em;        
+    }
+
+    .headerContentDescription p {
+        font-size: 1.3em;
+    }
+
+    .headerContentButton a {
+        font-size: 1em;
+    }
+
+    .placeDescription h2 {
+        font-size: 1.5em;
+    }
+
+    .placeDescription h2, .placeDescription p, .placeDescription button {
+        margin: 0.8rem;
+    }
+
+    .placeDescription button {
+        font-size: 1em;
+    }
+
+    .footerNavItem {
+        padding: 20px 0px;
+        width: 110px;
+    }
+
+    .footerNavItem a {
+        font-size: 1em;
+    }
+
+    input[type=text] {
+        width: 25%;
+    }
+
+    textarea {
+        width: 53%;
+    }
+
+    .formSection div {
+        width: 53%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    header {
+        height: 65vh;
+    }
+
+    .headerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerNav {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .headerImagen {
+        width: auto;
+    }
+
+    .headerNavItems {
+        justify-content: center;
+    }
+
+    .headerContent {
+        height: 50vh;
+    }
+
+    .headerContentDescription {
+        width: 90%;
+        height: 60%;
+    }
+
+    .headerContentDescription h1 {        
+        font-size: 1.5em;        
+    }
+
+    .headerContentDescription p {
+        font-size: 1.1em;
+    }
+
+    .headerContentButton a {
+        font-size: 0.8em;
+    }
+
+    .speakeDescription p {
+        line-height: 1em;
+    }
+
+    .placeSection {
+        height: 50vh;
+    }
+
+    .placeDescription h2, .placeDescription p, .placeDescription button {
+        margin: 0.6rem;
+    }
+
+    .placeDescription h2 {
+        font-size: 1.3em;
+    }
+
+    .placeDescription p {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+
+    .footerNavItem {
+        padding: 15px 10px;
+        width: 30vw;
+    }
+    
+    input[type=text] {
+        width: 30%;
+    }
+
+    textarea {
+        width: 65%;
+        font-size: 1.5em;
+    }
+
+    .formSection div {
+        width: 65%;
+    }
+
+    .formSection h3 {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width : 590px) {
+    header {
+        height: 75vh;
+    }
+
+    .headerNavItems {
+        flex-direction: column;
+    }
+
+    .placeDescription h2 {
+        font-size: 1.2em;
+    }
+
+    .placeDescription p {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .placeDescription button {
+        font-size: .8em;
+    }
+
+    .speakersCard {
+        width: 80%;
+    }
+
+    .placeSection {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 60vh;
+    }
+
+    .placeImg, .placeDescription {
+        width: 100%;
+    }
+
+    .placeImg {
+        background-position-y: bottom;
+    }
+    
+    input[type=text] {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin: 1rem auto;
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    .formSection div {
+        width: 70%;
+    }
+
+    .footerNavItems {
+        flex-direction: column;
+    }
+
+    .footerNavItem {
+        width: 100%;
+    }
+}
+
