@@ -226,7 +226,7 @@ header {
 .placeSection {
     background-color: #353a40;
     width: 100%;
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -235,7 +235,7 @@ header {
 
 .placeImg, .placeDescription {
     width: 50%;
-    height: 100%;
+    height: 60vh;
     display: block;
     border: 1px solid white;
 }
@@ -244,6 +244,7 @@ header {
     background-image: url('../assets/img/honolulu.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
 }
 
 .placeDescription h2, .placeDescription p, .placeDescription button {
@@ -373,7 +374,8 @@ footer {
 
     .headerContentDescription {
         margin-top: 0rem;
-    }
+        width: 70%;
+    }   
 
     .speakersContent {
         width: 90vw;
@@ -382,7 +384,7 @@ footer {
 
 @media screen and (max-width : 1024px) {
     header {
-        height: 65vh;
+        height: auto;
     }
 
     .headerImagen, .headerNav {
@@ -406,14 +408,8 @@ footer {
     }
 
     .headerContent {
-        height: 65vh;
+        height: 60vh;
     }    
-
-    .headerContentDescription {
-        width: 60%;
-        height: 50%;
-        margin-top: 0rem;
-    }
 
     .headerContentDescription h1 {        
         font-size: 2em;        
@@ -461,6 +457,12 @@ footer {
     }
 }
 
+@media screen and (max-width : 992px) {
+    .headerContent {
+        height: 50vh;
+    }
+}
+
 @media screen and (max-width : 768px) {
     header {
         height: 65vh;
@@ -493,7 +495,7 @@ footer {
 
     .headerContentDescription {
         width: 90%;
-        height: 60%;
+        height: 45%;
     }
 
     .headerContentDescription h1 {        
@@ -512,8 +514,8 @@ footer {
         line-height: 1em;
     }
 
-    .placeSection {
-        height: 50vh;
+    .placeImg {
+        background-position: left bottom;
     }
 
     .placeDescription h2, .placeDescription p, .placeDescription button {
@@ -554,11 +556,23 @@ footer {
 
 @media screen and (max-width : 590px) {
     header {
-        height: 75vh;
+        height: auto;
+    }
+
+    .headerContent {
+        height: 35vh;
     }
 
     .headerNavItems {
         flex-direction: column;
+    }
+
+    .headerContentDescription {
+        height: auto;
+    }
+
+    .headerContentDescription p {
+        display: none;
     }
 
     .placeDescription h2 {
@@ -581,7 +595,7 @@ footer {
     .placeSection {
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 60vh;
+        height: auto;
     }
 
     .placeImg, .placeDescription {
@@ -590,6 +604,11 @@ footer {
 
     .placeImg {
         background-position-y: bottom;
+        height: 50vh;
+    }
+
+    .placeDescription {
+        height: auto;
     }
     
     input[type=text] {
@@ -601,7 +620,7 @@ footer {
 
     textarea {
         width: 70%;
-    }
+     }
 
     .formSection div {
         width: 70%;
